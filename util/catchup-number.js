@@ -12,7 +12,7 @@ async function getAllCatchUpNumbers() {
 
 async function getDirectoryNames(path) {
 	return (await readdir(path, { withFileTypes: true }))
-		.filter((dirent) => dirent.isDirectory())
+	.filter((dirent) => dirent.isDirectory())
 		.map((dirent) => dirent.name);
 }
 
